@@ -14,7 +14,7 @@ pipeline{
 			bat "npm install -g newman newman-reporter-htmlextra"
 
 			echo "Executing the framework for 50 users"
-			bat "newman run Runner_Practice.postman_collection.json -e New Environment.postman_environment.json -d test_data.csv -r cli,htmlextra" 
+			bat "newman run Runner_Practice.postman_collection.json -e New_Environment.postman_environment.json -d test_data.csv -r cli,htmlextra" 
 			}
 		}
 	}
