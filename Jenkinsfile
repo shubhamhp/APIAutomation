@@ -2,8 +2,10 @@ pipeline{
 	agent any
 	
 	stages{
-		stage("Checkout code"){
+		stage("Checkout code"){	
+		steps{
 			checkout scm
+		}
 		}
 
 		stage("Run Postman Suite"){
